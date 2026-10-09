@@ -1,11 +1,4 @@
-Hybrid Hydrological Modeling
-
-Model Description
-This project implements a Hybrid Data-Driven and Process-Based Modeling framework for streamflow forecasting. It integrates the physically-based QSWATPLUS model with advanced machine learning algorithms including Random Forest (RF), XGBoost, LightGBM, and LSTM.
-
-The integration is achieved via a Stacking Ensemble (Meta-learner) and Bayesian Model Averaging (BMA), which effectively bridge the gap between physical process understanding and the pattern-recognition capabilities of ML.
-
-Hybrid QSWAT+–machine-learning streamflow forecasting
+# Hybrid QSWAT+–machine-learning streamflow forecasting
 
 This repository contains the notebook, Python workflow, and generated results for a hybrid streamflow forecasting study in the Upper Ganale River Basin. The workflow combines daily QSWAT+ discharge with observed streamflow and climate inputs, then trains Random Forest (RF), XGBoost, LightGBM, and Long Short-Term Memory (LSTM) models. Ridge regression stacks out-of-fold base-model predictions; a Bayesian Model Averaging (BMA) mixture provides a second ensemble estimate.
 
@@ -152,18 +145,3 @@ Full training and three-fold time-series CV results are in `model_performance_ta
 ### Project-specific citation and data release
 
 The supplementary material mentions an Ali (2026) Zenodo deposit for climate-model evaluation scripts, but does not give its DOI or record URL. Add the verified record if that workflow is used to reproduce the CRI ranking. No public link/DOI was supplied for the meteorological station data, gauge series, QSWAT+ project, model-ranking table, or processed CMIP6 files. Before public release, deposit the code and shareable derived data in a stable repository, archive the exact ranking and processing configuration, and mint a versioned DOI. State which source data can be requested from custodians and do not redistribute restricted data without permission.
-
-Recommendations
-•	Extend the framework with CA Markov LULC forecasts to simulate land use change impacts on hydrology.
-•	Deploy results in a dashboard/API for stakeholder decision support.
-•	Apply the hybrid approach to other Ethiopian basins for comparative analysis.
-•	Integrate socio economic indicators for holistic climate smart water management.
-
-References
-•	Abbaspour, K. C., Vaghefi, S. A., & Srinivasan, R. (2018). A guideline for successful calibration and validation of hydrological models. Water, 10(6), 728. https://doi.org/10.3390/w10060728
-•	Chen, T., & Guestrin, C. (2016). XGBoost: A scalable tree boosting system. Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 785–794. https://doi.org/10.1145/2939672.2939785
-•	Hochreiter, S., & Schmidhuber, J. (1997). Long short term memory. Neural Computation, 9(8), 1735–1780. https://doi.org/10.1162/neco.1997.9.8.1735 
-•	Ke, G., Meng, Q., Finley, T., Wang, T., Chen, W., Ma, W., … Liu, T. Y. (2017). LightGBM: A highly efficient gradient boosting decision tree. Advances in Neural Information Processing Systems, 30, 3146–3154.
-•	Solanki, A., et al. (2025). Improving streamflow prediction using multiple hydrological models and machine learning. Water Resources Research, 61(2), e2024WR036789. https://doi.org/10.1029/2024WR036789 
-•	Vaghefi, S. A., Abbaspour, K. C., & Srinivasan, R. (2019). Integrating SWAT and machine learning models for improved hydrological predictions. Hydrology, 6(3), 45. https://doi.org/10.3390/hydrology6030045
-
